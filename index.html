@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- PROJECT FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/queries.css" />
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__bar">
+        <img src="/images/logo.svg" alt="Sunnyside logo" class="header__logo" />
+  
+        <nav class="menu">
+          <ul class="menu-list">
+            <li><a href="#about" class="menu-list__link">About</a></li>
+            <li><a href="#services" class="menu-list__link">Services</a></li>
+            <li><a href="#projects" class="menu-list__link">Projects</a></li>
+            <li><a href="#contact" class="menu-list__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-movile-nav">
+          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+        </button>
+      </div>
+  
+      <div class="header__text">
+        <h1>We are creatives</h1>
+        <img src="/images/icon-arrow-down.svg" alt="Arrow down icon" class="header__button">
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="section__services">
+
+      <div class="service">
+        <div class="service__text">
+          <h2>Transform your brand</h2>
+          <p>  We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <div class="learnMore">
+            <a href="#" class="service__link service__link--yellow">Learn more</a>
+          </div>
+        </div>
+        <div class="service__imgBox">
+          <img src="/images/desktop/image-transform.jpg" alt="Yellow background with an egg">
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service__imgBox">
+          <img src="/images/desktop/image-stand-out.jpg" alt="Yellow background with an egg">
+        </div>
+        <div class="service__text">
+          <h2>Stand out to the right audience</h2>
+          <p>  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+          <div class="learnMore">
+            <a href="#" class="service__link service__link--pink">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="services" class="services__box">
+        <div class="service__box service__box--1">
+          <h2>Graphic Design</h2>
+          <p>  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
+        <div class="service__box service__box--2">
+          <h2>Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-testimonials">
+      <h3>Client testimonials</h3>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <img src="/images/image-emily.jpg" alt="Emily photo" />
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <cite> 
+            Emily R.
+            <span>Marketing Director</span>
+          </cite>
+        </div>
+        <div class="testimonial">
+          <img src="/images/image-thomas.jpg" alt="Thomas photo" />
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <cite> 
+            Thomas S.
+            <span>Chief Operating Officer</span>
+          </cite>
+        </div>
+        <div class="testimonial">
+          <img src="/images/image-jennie.jpg" alt="Jennie photo" />
+          <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <cite> 
+            Jennie F.
+            <span>Business owner</span>
+          </cite>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gallery">
+      <img src="/images/desktop/image-gallery-milkbottles.jpg" alt="Milk plastic bottles" />
+      <img src="/images/desktop/image-gallery-orange.jpg" alt="Half orange" />
+      <img src="/images/desktop/image-gallery-cone.jpg" alt="cookie icecream cone" />
+      <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" />
+    </section>
+
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer__container">
+      <img src="/images/logo.svg" alt="Sunnyside logo green">
+
+      <nav class="footer__menu">
+        <ul>
+          <li><a href="#about" class="footer__menu-link">About</a></li>
+          <li><a href="#services" class="footer__menu-link">Services</a></li>
+          <li><a href="#projects" class="footer__menu-link">Projects</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__icons">
+        <img src="/images/icon-facebook.svg" alt="Facebook green logo">
+        <img src="/images/icon-instagram.svg" alt="Instagram green logo">
+        <img src="/images/icon-twitter.svg" alt="Twitter green logo">
+        <img src="/images/icon-pinterest.svg" alt="Pinterest green logo">
+      </div>
+
+      <p class="footer__author">Saulo Román Santillán Nava</p>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

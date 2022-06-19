@@ -1,0 +1,131 @@
+@media ( max-width: 62.5em ) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media ( max-width: 50em ) {
+  .service {
+    height: 45rem;
+  }
+
+  .service__text {
+    padding: 5rem;
+  }
+
+  .service__imgBox img {
+    height: 45rem;
+  }
+
+  .service__box {
+    height: 45rem;
+    padding: 3rem;
+  }
+}
+
+@media( max-width: 38.75em ) {
+  h2 {
+    font-size: 4rem;
+  }
+  .header__text {
+    text-align: center;
+  }
+  .service {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .service__text {
+    height: 55rem;
+    text-align: center;
+  }
+  .service__text p {
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+  }
+  .services__box {
+    grid-template-columns: 1fr;
+  }
+  .service__box p {
+    font-size: 1.8rem;
+  }
+  .service__box {
+    height: 50rem;
+  }
+  .section-testimonials {
+    padding: 8rem 0;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonial p, .testimonial cite {
+    font-size: 1.8rem;
+  }
+  .section-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-movile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .menu {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 90%;
+    height: 50rem;
+    /* transform: translateX(105%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .open .menu {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(6%, 20%);
+  }
+  .open .menu-icon[name="close-outline"] {
+    display: block;
+  }
+  .open .menu-icon[name="menu-outline"] {
+    display: none;
+  }
+  .menu {
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+  }
+  .menu-list {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .menu-list__link:link,
+  .menu-list__link:visited {
+    font-size: 2.5rem;
+    color: var(--color-blue-3);
+  }
+  .menu-list::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    transform: translateY(-100%);
+    background-color: #fff;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 0);
+    z-index: 1;
+  }
+  .menu-list__link:hover,
+  .menu-list__link:active {
+    margin: 1.5rem 3rem;
+    color: var(--color-blue-1);
+    background-color: var(--color-yellow);
+  }
+  
+}
